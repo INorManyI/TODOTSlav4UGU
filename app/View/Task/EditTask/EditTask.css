@@ -1,0 +1,30 @@
+TextField
+{
+    color: rgb(255, 255, 255);
+}
+
+Page > FlexboxLayout
+{
+    padding: 0 15%;
+}
+
+Page .title
+{
+    font-size: 28px;
+}
+
+Page .description
+{
+    justify-content: space-between;
+    flex-flow: row nowrap;
+}
+
+Page .description > TextField
+{
+    width: 70%;
+}
+
+Page .description > Button
+{
+    width: 10%;
+}

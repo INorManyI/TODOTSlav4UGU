@@ -1,0 +1,13 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <FlexboxLayout>
+        <TextField class="title" hint="Название..." text="{{ title }}" returnPress="{{ setTitle }}" />
+        <FlexboxLayout class="description">
+            <TextField hint="Описание..." text="{{ description }}" returnPress="{{ setDescription }}" />
+            <Button text="✕" tap="{{ removeTask }}"/>
+        </FlexboxLayout>
+
+        <Button tap="{{ reverseCompletionStatus }}" text="{{ completionText }}" />
+
+        <Button text="Сохранить изменения" tap="{{ applyChanges }}"/>
+    </FlexboxLayout>
+</Page>

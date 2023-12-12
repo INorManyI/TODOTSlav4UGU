@@ -1,0 +1,16 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <FlexboxLayout>
+        <FlexboxLayout>
+            <Button text="+" tap="{{ addNewTask }}" />
+            <Button text=" ➙🏁 " tap="{{ switchToUncompletedTasks }}"/>
+            <Button text="✓" tap="{{ switchToCompletedTasks }}"/>
+        </FlexboxLayout>
+        <StackLayout class="tasks">
+            <ListView items="{{tasks}}" itemTap="{{ gotoTaskEditor }}" separatorColor="transparent">
+                <ListView.itemTemplate>
+                    <Label text="{{ Title }}" />
+                </ListView.itemTemplate>
+            </ListView>
+        </StackLayout>
+    </FlexboxLayout>
+</Page>

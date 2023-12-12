@@ -1,0 +1,36 @@
+﻿@import '@nativescript/theme/css/core.css';
+@import '@nativescript/theme/css/default.css';
+
+ActionBar
+{
+    height: 0;
+}
+
+Page
+{
+    background-color: #c07a7a;
+}
+
+Page > FlexboxLayout
+{
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+Page > FlexboxLayout *
+{
+    font-size: 20px;
+    color: #170d11;
+    background-color: rgba(0,0,0,0);
+}
+
+Page > FlexboxLayout *:highlighted
+{
+    color: black;
+}
+
+Page > FlexboxLayout > .create
+{
+    color: black;
+    font-size: 38px;
+}

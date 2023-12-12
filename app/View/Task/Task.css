@@ -1,0 +1,10 @@
+.tasks
+{
+    width: 75%;
+    height: 90%;
+}
+
+.tasks > ListView
+{
+    height: 100%;
+}
